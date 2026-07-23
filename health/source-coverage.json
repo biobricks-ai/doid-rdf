@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "profile": "reference-ontology-import",
+  "tabular_conversion_coverage": "not-applicable",
+  "minimum_triple_coverage": 1.0,
+  "minimum_class_label_coverage": 1.0,
+  "integrity_metrics": [
+    "source_checksum",
+    "source_triples",
+    "output_triples",
+    "doid_classes",
+    "labeled_doid_classes",
+    "parse_errors"
+  ],
+  "note": "Coverage is a lossless RDF statement and canonical-class integrity contract."
+}

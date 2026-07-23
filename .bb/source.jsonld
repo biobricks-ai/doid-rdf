@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "schema": "https://schema.org/",
+    "spdx": "http://spdx.org/rdf/terms#"
+  },
+  "@id": "https://github.com/DiseaseOntology/HumanDiseaseOntology/releases/tag/v2026-06-30",
+  "@type": "dcat:Dataset",
+  "dcterms:title": "Human Disease Ontology",
+  "dcterms:description": "The authoritative community ontology of human diseases, release v2026-06-30.",
+  "dcterms:publisher": {"@id": "https://disease-ontology.org/", "schema:name": "Disease Ontology"},
+  "dcterms:license": {"@id": "https://creativecommons.org/publicdomain/zero/1.0/"},
+  "dcterms:hasVersion": "v2026-06-30",
+  "dcterms:issued": "2026-07-01",
+  "dcat:landingPage": {"@id": "https://github.com/DiseaseOntology/HumanDiseaseOntology"},
+  "prov:wasDerivedFrom": {"@id": "https://github.com/DiseaseOntology/HumanDiseaseOntology/commit/61d841a69c2b45a3f50214fb387263b5e99ba078"},
+  "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcterms:title": "doid.owl",
+    "dcat:downloadURL": {"@id": "https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2026-06-30/src/ontology/doid.owl"},
+    "dcat:mediaType": "application/rdf+xml",
+    "dcat:byteSize": 28480371,
+    "spdx:checksum": {
+      "spdx:algorithm": "spdx:checksumAlgorithm_sha256",
+      "spdx:checksumValue": "2c25743800b059326b4c318e83a52803b58fdf8720746921cc292afdac0f7e4e"
+    }
+  },
+  "schema:dateModified": "2026-07-01T03:34:36Z",
+  "schema:conditionsOfAccess": "Unrestricted; CC0-1.0"
+}

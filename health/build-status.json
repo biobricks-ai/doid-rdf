@@ -1,0 +1,15 @@
+{
+  "status": "built-artifact-push-blocked",
+  "profile": "reference-ontology-import",
+  "source_release": "v2026-06-30",
+  "source_sha256": "2c25743800b059326b4c318e83a52803b58fdf8720746921cc292afdac0f7e4e",
+  "source_bytes": 28480371,
+  "rdf_statements": 306890,
+  "artifact_sha256": "b92e255402709c7d180f44d5e9800a045c9828072a2837489dd48ff5fa306568",
+  "artifact_bytes": 3520190,
+  "doid_classes": 14735,
+  "class_label_coverage": 1.0,
+  "license": "CC0-1.0",
+  "tests": "pass",
+  "blocker": "DVC artifact publication requires AWS reauthentication; the configured S3 refresh token has expired."
+}

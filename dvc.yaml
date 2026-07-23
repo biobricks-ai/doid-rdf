@@ -1,0 +1,17 @@
+stages:
+  acquire:
+    cmd: uv run python stages/acquire.py source/doid.owl
+    deps:
+      - stages/acquire.py
+      - .bb/source.jsonld
+    outs:
+      - source/doid.owl
+  build:
+    cmd: uv run python stages/build.py source/doid.owl brick
+    deps:
+      - stages/build.py
+      - source/doid.owl
+    outs:
+      - brick/doid.nt.gz
+      - brick/source-coverage.json
+      - brick/ontology-health.json

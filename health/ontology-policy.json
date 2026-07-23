@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "profile": "reference-ontology-import",
+  "schema_ownership": "upstream Disease Ontology",
+  "local_vocabulary_limits": "No local ontology terms may be added",
+  "requirements": [
+    "pinned source release and checksum",
+    "zero parser errors",
+    "all canonical DOID classes labeled",
+    "nonempty canonical DOID subclass hierarchy",
+    "lossless preservation of upstream blank-node axioms",
+    "deterministic output"
+  ],
+  "note": "Domain modeling quality is owned by the upstream authority; this brick tests faithful packaging and identifier integrity."
+}

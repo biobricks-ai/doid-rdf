@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "schema": "https://schema.org/",
+    "spdx": "http://spdx.org/rdf/terms#"
+  },
+  "@id": "https://biobricks.ai/doid-rdf",
+  "@type": "dcat:Dataset",
+  "dcterms:title": "Disease Ontology RDF graph brick",
+  "dcterms:description": "A lossless, deterministic N-Triples packaging of Human Disease Ontology v2026-06-30 for the Identifiers.org doid namespace.",
+  "dcterms:license": {"@id": "https://creativecommons.org/publicdomain/zero/1.0/"},
+  "dcterms:hasVersion": "v2026-06-30",
+  "prov:wasDerivedFrom": {"@id": "https://github.com/DiseaseOntology/HumanDiseaseOntology/releases/tag/v2026-06-30"},
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:name": "Canonical RDF/XML to sorted N-Triples normalization",
+    "schema:softwareVersion": "doid-rdf 0.1.0"
+  },
+  "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcterms:title": "doid.nt.gz",
+    "dcat:downloadURL": "brick/doid.nt.gz",
+    "dcat:mediaType": "application/n-triples",
+    "dcat:compressFormat": "application/gzip",
+    "dcat:byteSize": 3520190,
+    "spdx:checksum": {
+      "spdx:algorithm": "spdx:checksumAlgorithm_sha256",
+      "spdx:checksumValue": "b92e255402709c7d180f44d5e9800a045c9828072a2837489dd48ff5fa306568"
+    }
+  },
+  "schema:numberOfItems": 306890,
+  "schema:additionalProperty": [
+    {"schema:name": "DOID classes", "schema:value": 14735},
+    {"schema:name": "distinct predicates", "schema:value": 59}
+  ]
+}

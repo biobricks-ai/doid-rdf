@@ -1,0 +1,42 @@
+schema: '2.0'
+stages:
+  acquire:
+    cmd: uv run python stages/acquire.py source/doid.owl
+    deps:
+    - path: .bb/source.jsonld
+      hash: md5
+      md5: 17024e9c58a53184480a447b4fb9e97b
+      size: 1588
+    - path: stages/acquire.py
+      hash: md5
+      md5: 0d02c0072f50dbf27a8cb0c896d6d8b6
+      size: 1099
+    outs:
+    - path: source/doid.owl
+      hash: md5
+      md5: 07089cabf2b40118f1e3fc9da5cf5168
+      size: 28480371
+  build:
+    cmd: uv run python stages/build.py source/doid.owl brick
+    deps:
+    - path: source/doid.owl
+      hash: md5
+      md5: 07089cabf2b40118f1e3fc9da5cf5168
+      size: 28480371
+    - path: stages/build.py
+      hash: md5
+      md5: 54e636bc6caa78baf0e205a065cd5db1
+      size: 3088
+    outs:
+    - path: brick/doid.nt.gz
+      hash: md5
+      md5: a20b522f96855e17b8441c1d5d2f8afd
+      size: 3520190
+    - path: brick/ontology-health.json
+      hash: md5
+      md5: 35b2d62d91b009d769eedbf4766d3413
+      size: 401
+    - path: brick/source-coverage.json
+      hash: md5
+      md5: 16bfede8b49101f8628ec10f9536638e
+      size: 377
