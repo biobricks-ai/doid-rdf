@@ -61,4 +61,7 @@ def test_checked_in_health_contracts():
     assert coverage["profile"] == policy["profile"] == status["profile"] == "reference-ontology-import"
     assert coverage["tabular_conversion_coverage"] == "not-applicable"
     assert policy["schema_ownership"] == "upstream Disease Ontology"
-    assert status["status"] in {"validated-reference-import", "built-artifact-push-blocked"}
+    assert status["status"] == "validated-reference-import"
+    assert status["artifact_publication"] == "deferred-by-project-policy"
+    assert status["artifact_location"] == "local DVC cache"
+    assert status["blocker"] is None

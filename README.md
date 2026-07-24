@@ -14,3 +14,8 @@ uv run pytest -q
 The release contains 306,890 statements and 14,735 canonical `http://purl.obolibrary.org/obo/DOID_…` classes. All DOID classes have labels. Authoritative OWL restrictions and axiom annotations use blank nodes; the build applies the RDF Dataset Canonicalization algorithm URDNA2015 so repeated builds are byte-for-byte reproducible.
 
 Coverage for a reference ontology means faithful RDF import, not tabular-cell conversion. The build requires equal source/output statement counts, complete labels for DOID classes, a nonempty DOID hierarchy, strict source integrity, and successful parsing of the production artifact.
+
+The complete generated artifact is retained in the local DVC cache. Remote DVC
+publication is currently `deferred-by-project-policy`; this is an intentional
+distribution choice, not a build or graph-health blocker. The committed DVC
+lock, artifact byte count, and SHA-256 preserve the exact local-build evidence.
